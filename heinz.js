@@ -114,7 +114,7 @@ const BOT_NAME = process.env.BOT_NAME || "ʜׅ֮ᴇׁׅܻ݊ɪׁׁׁׅׅׅ݊ɴᴢ
 const OWNER_NAME = process.env.OWNER_NAME || " ׅ֮ʜׅ֮ᴇׁׅܻ݊ɪׁׁׁׅׅׅ݊ɴᴢׅ֬ ֮ʙׁᴏׁׅׅʏׅ֮";
 
 const MENU_IMAGE_URL = process.env.MENU_IMAGE_URL || "https://files.catbox.moe/ym2qui.jpg";
-const REPO_LINK = process.env.REPO_LINK || "https://github.com/HEINZ-BOY";
+const REPO_LINK = process.env.REPO_LINK || "https://github.com/HEINZBOYY";
 
 // Auto-status configuration
 const AUTO_STATUS_SEEN = process.env.AUTO_STATUS_SEEN || "true";
@@ -796,12 +796,12 @@ function generateMenu(userPrefix, sessionId) {
 │ ⏰ ᴜᴘᴛɪᴍᴇ  :  ${runtimeTracker.getUptime()}
 │ 📂 ʀᴀᴍ :  ${Math.round(process.memoryUsage().rss / 1024 / 1024)}ᴍʙ
 │ 🎐 ᴘʀéғɪxᴇ :  ${userPrefix}
-╰────────•••───────❆\n\n
+╰────────•••───────❆
 
 `;
 
     // Add commands by category with the missing categories
-    const categoryOrder = ['utility', 'settings', 'general', 'fun', 'group'];
+    const categoryOrder = ['🔧 ʜᴇɪɴᴢ ᴜᴛɪʟɪᴛʏ', '⚙️ ʜᴇɪɴᴢ sᴇᴛᴛɪɴɢs', '🦄 ʜᴇɪɴᴢ ɢᴇɴᴇʀᴀʟ', '🥳 ʜᴇɪɴᴢ ғᴜɴ', '👨🏻‍💼 ʜᴇɪɴᴢ ɢʀᴏᴜᴘ'];
     
     for (const tag of categoryOrder) {
         if (commandsByTag[tag] && commandsByTag[tag].length > 0) {
@@ -811,11 +811,11 @@ function generateMenu(userPrefix, sessionId) {
             for (let i = 0; i < commandsByTag[tag].length; i++) {
                 menuText += `│ ⬡ ${commandsByTag[tag][i].name}\n`;
             }
-            menuText += `╰────────────────⭓\n\n`;
+            menuText += `╰────────────────⭓\n`;
         }
     }
 
-    menuText += `『 ʜׅ֮ᴇׁׅܻ݊ɪׁׁׁׅׅׅ݊ɴᴢׅ֬ ᴍׁׅ֪݊ɪׁׁׅׅׅ݊ɴɪׁׁׅׅׅ ֮ʙᴏׁׅׅᴛׁׅ֮ ֮ʙׁʏ ׅ֮ʜׅ֮ᴇׁׅܻ݊ɪׁׁׁׅׅׅ݊ɴᴢׅ֬ ֮ʙׁᴏׁׅׅʏׅ֮ 』`;
+    menuText += `ʜׅ֮ᴇׁׅܻ݊ɪׁׁׁׅׅׅ݊ɴᴢׅ֬ ᴍׁׅ֪݊ɪׁׁׅׅׅ݊ɴɪׁׁׅׅׅ ֮ʙᴏׁׅׅᴛׁׅ֮ ֮ʙׁʏ ׅ֮ʜׅ֮ᴇׁׅܻ݊ɪׁׁׁׅׅׅ݊ɴᴢׅ֬ ֮ʙׁᴏׁׅׅʏׅ֮ `;
 
     return menuText;
 }
