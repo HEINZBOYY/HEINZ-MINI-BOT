@@ -1,4 +1,5 @@
-// === menu.js ===
+// === menux.js ===
+const heinz = require('../heinz');
 const moment = require('moment-timezone');
 const { cmd, commands } = require('../command');
 
