@@ -25,7 +25,6 @@ module.exports = {
         return reply(
           `╭─ 「 *ғᴀɴᴄʏ sᴛʏʟᴇ* 」\n` +
           `│ Example: ${prefix}fancy 10 HEINZ-BOY\n` +
-          `╰──────────────────\n\n` +
           String.fromCharCode(8206).repeat(4001) +
           fancy.list("HEINZ-BOY", fancy)
         );
