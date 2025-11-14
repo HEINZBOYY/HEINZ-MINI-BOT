@@ -801,7 +801,7 @@ function generateMenu(userPrefix, sessionId) {
 `;
 
     // Add commands by category with the missing categories
-    const categoryOrder = ['🔧 ʜᴇɪɴᴢ ᴜᴛɪʟɪᴛʏ', '⚙️ ʜᴇɪɴᴢ sᴇᴛᴛɪɴɢs', '🦄 ʜᴇɪɴᴢ ɢᴇɴᴇʀᴀʟ', '🥳 ʜᴇɪɴᴢ ғᴜɴ', '👨🏻‍💼 ʜᴇɪɴᴢ ɢʀᴏᴜᴘ'];
+    const categoryOrder = ['utility', 'settings', 'general', 'fun', 'group'];
     
     for (const tag of categoryOrder) {
         if (commandsByTag[tag] && commandsByTag[tag].length > 0) {
