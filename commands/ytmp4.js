@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 module.exports = {
-  pattern: "ytmp4",
+  pattern: "video",
   desc: "Download YouTube video in MP4 format using David Cyril API",
   react: "🎬",
   category: "📥 ʜᴇɪɴᴢ ᴅᴏᴡɴʟᴏᴀᴅ",
